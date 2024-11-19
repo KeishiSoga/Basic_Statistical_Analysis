@@ -49,8 +49,8 @@ The simulated dataset contains information from 92 hypothetical participants in 
 - Diagnostic plots for regression analysis
 
 ### Advanced Analytics
+- Independent samples t-test
 - Multiple regression analysis (`score ~ weight + age`)
-- Correlation analysis between variables
 - Comprehensive summary tables using `gtsummary`
 
 ## Getting Started
