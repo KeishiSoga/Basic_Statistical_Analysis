@@ -34,8 +34,8 @@ The simulated dataset contains information from 92 hypothetical participants in 
 - `age`: Participant age (years)
 - `sex`: Gender (male/female)
 - `weight`: Body weight (kg)
-- `score`: Performance score (scale: 0-100)
-- `intervention`: Group assignment (0=Control, 1=Intervention)
+- `score`: Performance score 
+- `intervention`: Group assignment (0=Intervention, 1=Control)
 
 ## Analysis Features
 
