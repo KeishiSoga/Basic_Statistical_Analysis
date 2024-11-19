@@ -1,4 +1,4 @@
-# Health Intervention Study Analysis
+# Health Intervention Study Analysis for R Beginners
 
 This repository contains R code and data for analyzing the effects of a health intervention on participant scores. The analysis includes statistical tests, visualizations, and comprehensive reporting of results.
 **Important Note:** The dataset (`data.csv`) is a simulated dataset generated using random number generation for educational and demonstration purposes. It does not contain real participant data.
