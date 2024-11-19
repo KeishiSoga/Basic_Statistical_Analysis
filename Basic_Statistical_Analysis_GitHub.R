@@ -60,7 +60,7 @@ library(tidyplots)
 data %>% 
   tidyplot(x = intervention, y = score, color =  intervention,width = 100, height = 60) %>% 
   #add_mean_bar(alpha = 0.4) %>% 
-  add_sem_errorbar() %>% 
+  #add_sem_errorbar() %>% 
   add_data_points_beeswarm() %>%
   adjust_padding(bottom = 0.05) %>% 
   add_boxplot(fill = NA) %>% 
