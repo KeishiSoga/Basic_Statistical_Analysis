@@ -55,6 +55,24 @@ boxplot(score ~ intervention, data = data,
         xlab = "Intervention",
         ylab = "Score")
 
+# Using tidyplots to create boxplot
+library(tidyplots)
+data %>% 
+  tidyplot(x = intervention, y = score, color =  intervention,width = 100, height = 60) %>% 
+  #add_mean_bar(alpha = 0.4) %>% 
+  add_sem_errorbar() %>% 
+  add_data_points_beeswarm() %>%
+  adjust_padding(bottom = 0.05) %>% 
+  add_boxplot(fill = NA) %>% 
+  adjust_colors(colors_discrete_apple) +
+  theme(
+    text = element_text(size = 16),           # 全体の文字サイズ
+    axis.text = element_text(size = 14),     # 軸ラベルの文字サイズ
+    axis.title = element_text(size = 16),    # 軸タイトルの文字サイズ
+    legend.text = element_text(size = 14),   # 凡例の文字サイズ
+    legend.title = element_text(size = 16)   # 凡例タイトルの文字サイズ
+  )
+
 # --- Multiple Regression Analysis ---
 # Load additional packages
 library(stargazer)
