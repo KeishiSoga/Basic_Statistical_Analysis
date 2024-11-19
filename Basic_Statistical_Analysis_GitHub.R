@@ -66,11 +66,11 @@ data %>%
   add_boxplot(fill = NA) %>% 
   adjust_colors(colors_discrete_apple) +
   theme(
-    text = element_text(size = 16),           # 全体の文字サイズ
-    axis.text = element_text(size = 14),     # 軸ラベルの文字サイズ
-    axis.title = element_text(size = 16),    # 軸タイトルの文字サイズ
-    legend.text = element_text(size = 14),   # 凡例の文字サイズ
-    legend.title = element_text(size = 16)   # 凡例タイトルの文字サイズ
+    text = element_text(size = 16),           # Overall font size
+    axis.text = element_text(size = 14),      # Font size for axis labels
+    axis.title = element_text(size = 16),     # Font size for axis titles
+    legend.text = element_text(size = 14),    # Font size for legend text
+    legend.title = element_text(size = 16)    # Font size for legend title
   )
 
 # --- Multiple Regression Analysis ---
