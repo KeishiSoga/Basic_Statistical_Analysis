@@ -13,7 +13,6 @@ This repository contains R code and data for analyzing the effects of a health i
 - Data Visualization
 - Regression Analysis
 - Diagnostic Plots
-- Correlation Analysis
 - Descriptive Statistics
 - Creating Summary Tables
 
