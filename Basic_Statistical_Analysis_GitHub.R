@@ -17,6 +17,7 @@ print(getwd())
 # install.packages("tidyverse")
 # install.packages("stargazer")
 # install.packages("modelsummary")
+# install.packages("tidyplots")
 
 # Load required libraries
 library(gtsummary)
@@ -92,8 +93,7 @@ stargazer(model,
           column.sep.width = "3",
           dep.var.labels = "Score",
           covariate.labels = c("Weight", "Age"),
-          notes.label = "Notes:",
-          notes = "p<0.1; p<0.05; *p<0.01")
+          notes.label = "Notes:")
 
 # --- Diagnostic Plots ---
 # Display basic diagnostic plots
