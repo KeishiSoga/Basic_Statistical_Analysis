@@ -33,7 +33,9 @@ data <- read.csv("data.csv")
 #Confirmation of the data set
 str(data)
 #Converting to factor type
-data$intervention <- factor(data$intervention)
+data$intervention <- factor(data$intervention,
+                            levels = c(0, 1),
+                            labels = c("Exercise", "Control"))
 
 # --- T-test and Basic Statistics ---
 # Perform t-test comparing scores between intervention(1) and control(0) groups
