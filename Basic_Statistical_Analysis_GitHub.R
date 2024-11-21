@@ -18,6 +18,8 @@ print(getwd())
 # install.packages("stargazer")
 # install.packages("modelsummary")
 # install.packages("tidyplots")
+# install.packages("corrplot")
+# install.packages("ComplexHeatmap")
 
 # Load required libraries
 library(gtsummary)
@@ -104,6 +106,17 @@ plot(model)
 # Check correlations between variables
 cor_matrix <- cor(data[c("score", "weight", "age")])
 print(round(cor_matrix, 3))
+library(corrplot)
+corrplot(cor_matrix, 
+         type = 'lower', 
+         diag = FALSE, 
+         addCoef.col = "black",  
+         number.cex = 1.2)
+library(ComplexHeatmap)
+pheatmap(cor_matrix, name = "mat", number_format = "%.2f",        
+         number_color = "grey20",       
+         fontsize_number = 15,
+         column_title = "heatmap")
 
 # --- Descriptive Statistics ---
 # Display basic descriptive statistics
