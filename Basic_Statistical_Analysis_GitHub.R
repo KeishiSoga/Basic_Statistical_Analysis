@@ -144,9 +144,9 @@ table1 <- data %>%
                            sex ~ "Sex",
                            weight ~ "Weight (kg)",
                            score ~ "Accuracy (%)")) %>% 
-  add_p(list(age ~ "t.test",
-             weight ~ "t.test",
-             score ~ "t.test")) %>% 
+ # add_p(list(age ~ "t.test",
+ #            weight ~ "t.test",
+ #            score ~ "t.test")) %>% 
   modify_spanning_header(starts_with("stat") ~ "Treatment") %>% 
   modify_header(label = "Characteristics") %>% 
   add_overall() %>%   
