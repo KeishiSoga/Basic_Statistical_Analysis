@@ -137,7 +137,7 @@ table1 <- data %>%
               statistic = list(age ~ "{mean}({sd})",
                                weight ~ "{mean}({sd})",
                                score ~ "{mean}({sd})"),
-              digits = list(c(age, weight, score) ~ c(1, 1)),
+              digits = list(c(age, weight, score) ~ 1),
               label = list(age ~ "Age (yr)",
                            sex ~ "Sex",
                            weight ~ "Weight (kg)",
